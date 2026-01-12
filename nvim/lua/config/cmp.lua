@@ -74,3 +74,6 @@ cmp.setup({
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
   vim.lsp.config.clangd.capabilities = {capabilities}
   vim.lsp.enable("clangd")
+
+  vim.lsp.config.pyright.capabilities = {capabilities}
+  vim.lsp.enable("pyright")

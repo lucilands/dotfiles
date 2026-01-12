@@ -6,6 +6,7 @@ require("config.telescope-file-browser")
 require("config.lualine")
 require("config.nvim")
 require("config.keymaps")
+require("config.treesitter")
 
 vim.lsp.enable("pyright")
 
