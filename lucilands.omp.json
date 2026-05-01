@@ -1,0 +1,45 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+            "foreground": "189",
+            "style": "plain",
+            "template": "[{{ .Shell }}/{{ .UserName }} v{{ .ShellVersion }}]",
+            "type": "path"
+        },
+        {
+            "foreground": "194",
+            "style": "plain",
+            "template": " \uf4d3 {{ .PWD  }}",
+            "type": "path"
+        },
+        {
+            "foreground": "215",
+            "style": "plain",
+            "template": " \ue65b {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#CAEBE1> \uf046 {{ .Staging.String }}</>{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}",
+            "type": "git"
+        }  
+      ],
+      "type": "prompt"
+    },
+    {
+        "alignment": "left",
+        "newline": true,
+
+        "segments": [
+            {
+                "foreground": "122",
+                "style": "plain",
+                "template": "<{{ if .Code }}197{{ else }}122{{ end }}>{{ if .Code}}\uf00d {{ .Code }} {{ else }} \uf42e 0{{ end }} <255>$ ",
+                "type": "path"
+            }
+        ],
+
+        "type": "prompt"
+    }
+  ],
+  "version": 3
+}

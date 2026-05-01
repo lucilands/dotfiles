@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "Installed $pkgname" >> /var/log/last_installed.log
+hyprctl notify 1 1000 "rgb(a6e3a1)" "Installed packages $pkgname"

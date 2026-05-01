@@ -7,6 +7,7 @@ require("config.lualine")
 require("config.nvim")
 require("config.keymaps")
 require("config.treesitter")
+require("config.gradbg")
 
 vim.lsp.enable("pyright")
 

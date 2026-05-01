@@ -34,7 +34,7 @@ return {
       desc = "Quickfix List (Trouble)",
     },
 	{
-		"<C-d>",
+		"<C-e>",
 		"<cmd>Trouble lsp_definitions jump<cr>",
 		desc = "Goto definition (Trouble)",
 	},
