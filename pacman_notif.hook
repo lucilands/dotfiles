@@ -1,9 +1,11 @@
 [Trigger]
 Operation = Install
+Operation = Upgrade
 Type = Package
 Target = *
 
 [Action]
-Description = Sending notification to hyprland...
+Description = Sending Hyprland notification for installed packages...
 When = PostTransaction
-Exec = /usr/bin/env sh -c "hyprctl notify 1 1000 'rgb(a6e3a1)' 'Installed packages $pkgname' || true"
+NeedsTargets = true
+Exec = /usr/local/bin/pacman-notify.sh

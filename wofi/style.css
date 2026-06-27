@@ -1,0 +1,60 @@
+/* Noctalia — generated from ~/.config/noctalia/colors.json */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+}
+
+window {
+    background-color: #2e3440;
+    border: 1px solid #505a70;
+    border-radius: 10px;
+}
+
+#input {
+    background-color: #3b4252;
+    color: #eceff4;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 10px;
+    outline: none;
+    caret-color: #8fbcbb;
+}
+
+#input:focus {
+    border: 1px solid #8fbcbb;
+}
+
+#inner-box {
+    background-color: transparent;
+}
+
+#outer-box {
+    padding: 4px;
+}
+
+#scroll {
+    margin: 0 4px 4px 4px;
+}
+
+#entry {
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: #d8dee9;
+}
+
+#entry:selected,
+#entry:hover {
+    background-color: #3b4252;
+    color: #eceff4;
+}
+
+#entry:selected #text,
+#entry:hover #text {
+    color: #8fbcbb;
+}
+
+#text {
+    color: #d8dee9;
+}
